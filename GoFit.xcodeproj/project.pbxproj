@@ -34,6 +34,9 @@
 		0405DC96284DC080005C0111 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC95284DC080005C0111 /* Auth.storyboard */; };
 		0405DC99284DC4BA005C0111 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC98284DC4BA005C0111 /* ColorPalette.swift */; };
 		0405DC9B284DD4D3005C0111 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC9A284DD4D3005C0111 /* Gradient.swift */; };
+		0405DC9D284DE826005C0111 /* PartCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC9C284DE826005C0111 /* PartCircle.swift */; };
+		0405DC9F284DE8FB005C0111 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC9E284DE8FB005C0111 /* CarouselViewController.swift */; };
+		E31FD165B3656BB11D5390CA /* Pods_GoFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAE0D48A4B5F4102D414423 /* Pods_GoFit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,11 @@
 		0405DC95284DC080005C0111 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		0405DC98284DC4BA005C0111 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		0405DC9A284DD4D3005C0111 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		0405DC9C284DE826005C0111 /* PartCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartCircle.swift; sourceTree = "<group>"; };
+		0405DC9E284DE8FB005C0111 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		0A7F019AC4BB671C7D70052A /* Pods-GoFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoFit.release.xcconfig"; path = "Target Support Files/Pods-GoFit/Pods-GoFit.release.xcconfig"; sourceTree = "<group>"; };
+		944822D8AC6629912FCE6143 /* Pods-GoFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoFit.debug.xcconfig"; path = "Target Support Files/Pods-GoFit/Pods-GoFit.debug.xcconfig"; sourceTree = "<group>"; };
+		DBAE0D48A4B5F4102D414423 /* Pods_GoFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31FD165B3656BB11D5390CA /* Pods_GoFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +93,8 @@
 			children = (
 				0405DC59284D4E59005C0111 /* GoFit */,
 				0405DC58284D4E59005C0111 /* Products */,
+				3029159F99C30AFC6557502D /* Pods */,
+				36A47AA95B2847436AF4086D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,7 +134,7 @@
 		0405DC6F284DBCF7005C0111 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0405DC5E284D4E59005C0111 /* WelcomeViewController.swift */,
+				0405DCA0284DE901005C0111 /* AuthViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -158,8 +169,36 @@
 			children = (
 				0405DC98284DC4BA005C0111 /* ColorPalette.swift */,
 				0405DC9A284DD4D3005C0111 /* Gradient.swift */,
+				0405DC9C284DE826005C0111 /* PartCircle.swift */,
 			);
 			path = Static;
+			sourceTree = "<group>";
+		};
+		0405DCA0284DE901005C0111 /* AuthViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0405DC5E284D4E59005C0111 /* WelcomeViewController.swift */,
+				0405DC9E284DE8FB005C0111 /* CarouselViewController.swift */,
+			);
+			path = AuthViewControllers;
+			sourceTree = "<group>";
+		};
+		3029159F99C30AFC6557502D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				944822D8AC6629912FCE6143 /* Pods-GoFit.debug.xcconfig */,
+				0A7F019AC4BB671C7D70052A /* Pods-GoFit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		36A47AA95B2847436AF4086D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBAE0D48A4B5F4102D414423 /* Pods_GoFit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0405DC6B284D4E5A005C0111 /* Build configuration list for PBXNativeTarget "GoFit" */;
 			buildPhases = (
+				FB14DDC7289E14A072EDBBAD /* [CP] Check Pods Manifest.lock */,
 				0405DC53284D4E59005C0111 /* Sources */,
 				0405DC54284D4E59005C0111 /* Frameworks */,
 				0405DC55284D4E59005C0111 /* Resources */,
+				7BA5AEAB3C12B8FF9D1945A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,14 +288,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BA5AEAB3C12B8FF9D1945A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoFit/Pods-GoFit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoFit/Pods-GoFit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoFit/Pods-GoFit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB14DDC7289E14A072EDBBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoFit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0405DC53284D4E59005C0111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0405DC9B284DD4D3005C0111 /* Gradient.swift in Sources */,
+				0405DC9F284DE8FB005C0111 /* CarouselViewController.swift in Sources */,
 				0405DC5F284D4E59005C0111 /* WelcomeViewController.swift in Sources */,
 				0405DC5B284D4E59005C0111 /* AppDelegate.swift in Sources */,
+				0405DC9D284DE826005C0111 /* PartCircle.swift in Sources */,
 				0405DC5D284D4E59005C0111 /* SceneDelegate.swift in Sources */,
 				0405DC99284DC4BA005C0111 /* ColorPalette.swift in Sources */,
 			);
@@ -398,6 +483,7 @@
 		};
 		0405DC6C284D4E5A005C0111 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944822D8AC6629912FCE6143 /* Pods-GoFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,6 +512,7 @@
 		};
 		0405DC6D284D4E5A005C0111 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A7F019AC4BB671C7D70052A /* Pods-GoFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

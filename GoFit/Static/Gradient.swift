@@ -39,7 +39,7 @@ class BlueGradientButton: UIButton{
         gradient.colors = [ColorPalette.blue_linear1.cgColor, ColorPalette.blue_linear2.cgColor]
         gradient.startPoint = CGPoint(x: 0, y: 0)
         gradient.endPoint = CGPoint(x: 1, y: 1)
-        gradient.cornerRadius = 30
+        gradient.cornerRadius = self.layer.frame.height/2
         layer.insertSublayer(gradient, at: 0)
         return gradient
     }()

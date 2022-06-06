@@ -21,10 +21,7 @@ final class WelcomeViewController: UIViewController {
     }
     
     private func setUpObjects(){
-        let CORNER_RADIUS_VALUE = 2.0
-        
         taglineLabel.textColor = ColorPalette.gray1
-        startButton.layer.cornerRadius = startButton.frame.height / CORNER_RADIUS_VALUE
         xLabel.textColor = setGradientLayer(
             color1: ColorPalette.logo_linear1,
             color2: ColorPalette.logo_linear2,
