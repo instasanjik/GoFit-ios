@@ -32,6 +32,7 @@
 		0405DC93284DBEDD005C0111 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC81284DBEDD005C0111 /* Poppins-SemiBoldItalic.ttf */; };
 		0405DC94284DBEDD005C0111 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC82284DBEDD005C0111 /* Poppins-Italic.ttf */; };
 		0405DC96284DC080005C0111 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC95284DC080005C0111 /* Auth.storyboard */; };
+		0405DC99284DC4BA005C0111 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC98284DC4BA005C0111 /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		0405DC81284DBEDD005C0111 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		0405DC82284DBEDD005C0111 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		0405DC95284DC080005C0111 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		0405DC98284DC4BA005C0111 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		0405DC59284D4E59005C0111 /* GoFit */ = {
 			isa = PBXGroup;
 			children = (
+				0405DC97284DC49B005C0111 /* Static */,
 				0405DC70284DBECC005C0111 /* Fonts */,
 				0405DC6E284DBCDD005C0111 /* Supporting files */,
 				0405DC6F284DBCF7005C0111 /* ViewControllers */,
@@ -146,6 +149,14 @@
 				0405DC77284DBEDD005C0111 /* Poppins-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0405DC97284DC49B005C0111 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				0405DC98284DC4BA005C0111 /* ColorPalette.swift */,
+			);
+			path = Static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 				0405DC5F284D4E59005C0111 /* WelcomeViewController.swift in Sources */,
 				0405DC5B284D4E59005C0111 /* AppDelegate.swift in Sources */,
 				0405DC5D284D4E59005C0111 /* SceneDelegate.swift in Sources */,
+				0405DC99284DC4BA005C0111 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
