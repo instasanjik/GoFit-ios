@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0405DC5B284D4E59005C0111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC5A284D4E59005C0111 /* AppDelegate.swift */; };
 		0405DC5D284D4E59005C0111 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC5C284D4E59005C0111 /* SceneDelegate.swift */; };
-		0405DC5F284D4E59005C0111 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC5E284D4E59005C0111 /* ViewController.swift */; };
+		0405DC5F284D4E59005C0111 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC5E284D4E59005C0111 /* WelcomeViewController.swift */; };
 		0405DC62284D4E59005C0111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC60284D4E59005C0111 /* Main.storyboard */; };
 		0405DC64284D4E5A005C0111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC63284D4E5A005C0111 /* Assets.xcassets */; };
 		0405DC67284D4E5A005C0111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC65284D4E5A005C0111 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		0405DC57284D4E59005C0111 /* GoFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0405DC5A284D4E59005C0111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0405DC5C284D4E59005C0111 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0405DC5E284D4E59005C0111 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0405DC5E284D4E59005C0111 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		0405DC61284D4E59005C0111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0405DC63284D4E5A005C0111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0405DC66284D4E5A005C0111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,31 @@
 		0405DC59284D4E59005C0111 /* GoFit */ = {
 			isa = PBXGroup;
 			children = (
-				0405DC5A284D4E59005C0111 /* AppDelegate.swift */,
-				0405DC5C284D4E59005C0111 /* SceneDelegate.swift */,
-				0405DC5E284D4E59005C0111 /* ViewController.swift */,
+				0405DC6F284DBCF7005C0111 /* ViewControllers */,
+				0405DC6E284DBCDD005C0111 /* Supporting files */,
 				0405DC60284D4E59005C0111 /* Main.storyboard */,
 				0405DC63284D4E5A005C0111 /* Assets.xcassets */,
-				0405DC65284D4E5A005C0111 /* LaunchScreen.storyboard */,
 				0405DC68284D4E5A005C0111 /* Info.plist */,
 			);
 			path = GoFit;
+			sourceTree = "<group>";
+		};
+		0405DC6E284DBCDD005C0111 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				0405DC5A284D4E59005C0111 /* AppDelegate.swift */,
+				0405DC5C284D4E59005C0111 /* SceneDelegate.swift */,
+				0405DC65284D4E5A005C0111 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		0405DC6F284DBCF7005C0111 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0405DC5E284D4E59005C0111 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0405DC5F284D4E59005C0111 /* ViewController.swift in Sources */,
+				0405DC5F284D4E59005C0111 /* WelcomeViewController.swift in Sources */,
 				0405DC5B284D4E59005C0111 /* AppDelegate.swift in Sources */,
 				0405DC5D284D4E59005C0111 /* SceneDelegate.swift in Sources */,
 			);
