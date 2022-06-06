@@ -33,6 +33,7 @@
 		0405DC94284DBEDD005C0111 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC82284DBEDD005C0111 /* Poppins-Italic.ttf */; };
 		0405DC96284DC080005C0111 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC95284DC080005C0111 /* Auth.storyboard */; };
 		0405DC99284DC4BA005C0111 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC98284DC4BA005C0111 /* ColorPalette.swift */; };
+		0405DC9B284DD4D3005C0111 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405DC9A284DD4D3005C0111 /* Gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		0405DC82284DBEDD005C0111 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		0405DC95284DC080005C0111 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		0405DC98284DC4BA005C0111 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		0405DC9A284DD4D3005C0111 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				0405DC98284DC4BA005C0111 /* ColorPalette.swift */,
+				0405DC9A284DD4D3005C0111 /* Gradient.swift */,
 			);
 			path = Static;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0405DC9B284DD4D3005C0111 /* Gradient.swift in Sources */,
 				0405DC5F284D4E59005C0111 /* WelcomeViewController.swift in Sources */,
 				0405DC5B284D4E59005C0111 /* AppDelegate.swift in Sources */,
 				0405DC5D284D4E59005C0111 /* SceneDelegate.swift in Sources */,

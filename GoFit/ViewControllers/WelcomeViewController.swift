@@ -8,6 +8,7 @@
 import UIKit
 
 final class WelcomeViewController: UIViewController {
+    @IBOutlet weak var xLabel: UILabel!
     @IBOutlet weak var taglineLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
@@ -20,8 +21,15 @@ final class WelcomeViewController: UIViewController {
     }
     
     private func setUpObjects(){
+        let CORNER_RADIUS_VALUE = 2.0
+        
         taglineLabel.textColor = ColorPalette.gray1
-        startButton.layer.cornerRadius = startButton.frame.width/10.0
+        startButton.layer.cornerRadius = startButton.frame.height / CORNER_RADIUS_VALUE
+        xLabel.textColor = setGradientLayer(
+            color1: ColorPalette.logo_linear1,
+            color2: ColorPalette.logo_linear2,
+            bounds: xLabel.bounds
+        )
     }
 
 

@@ -55,7 +55,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQL-5Q-Xh1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQL-5Q-Xh1" customClass="BlueGradientButton" customModule="GoFit" customModuleProvider="target">
                                 <rect key="frame" x="30" y="796" width="354" height="60"/>
                                 <color key="backgroundColor" red="0.63137257099999999" green="0.74509805439999999" blue="0.98039215800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -79,6 +79,7 @@
                     <connections>
                         <outlet property="startButton" destination="hQL-5Q-Xh1" id="cfG-b0-Ctw"/>
                         <outlet property="taglineLabel" destination="Yus-nr-P6D" id="rtk-fq-PP4"/>
+                        <outlet property="xLabel" destination="IXN-xH-vWs" id="xdI-25-qm8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
