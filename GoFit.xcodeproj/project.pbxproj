@@ -31,6 +31,7 @@
 		0405DC92284DBEDD005C0111 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC80284DBEDD005C0111 /* Poppins-Regular.ttf */; };
 		0405DC93284DBEDD005C0111 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC81284DBEDD005C0111 /* Poppins-SemiBoldItalic.ttf */; };
 		0405DC94284DBEDD005C0111 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC82284DBEDD005C0111 /* Poppins-Italic.ttf */; };
+		0405DC96284DC080005C0111 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0405DC95284DC080005C0111 /* Auth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		0405DC80284DBEDD005C0111 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		0405DC81284DBEDD005C0111 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		0405DC82284DBEDD005C0111 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		0405DC95284DC080005C0111 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				0405DC70284DBECC005C0111 /* Fonts */,
-				0405DC6F284DBCF7005C0111 /* ViewControllers */,
 				0405DC6E284DBCDD005C0111 /* Supporting files */,
+				0405DC6F284DBCF7005C0111 /* ViewControllers */,
+				0405DC95284DC080005C0111 /* Auth.storyboard */,
 				0405DC60284D4E59005C0111 /* Main.storyboard */,
 				0405DC63284D4E5A005C0111 /* Assets.xcassets */,
 				0405DC68284D4E5A005C0111 /* Info.plist */,
@@ -223,6 +226,7 @@
 				0405DC90284DBEDD005C0111 /* Poppins-ExtraBold.ttf in Resources */,
 				0405DC62284D4E59005C0111 /* Main.storyboard in Resources */,
 				0405DC92284DBEDD005C0111 /* Poppins-Regular.ttf in Resources */,
+				0405DC96284DC080005C0111 /* Auth.storyboard in Resources */,
 				0405DC86284DBEDD005C0111 /* Poppins-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +392,7 @@
 				INFOPLIST_FILE = GoFit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,7 +420,7 @@
 				INFOPLIST_FILE = GoFit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
